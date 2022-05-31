@@ -1,0 +1,80 @@
+// ==== Custom Scss & Other Libraries ====s
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import "~sweetalert2/src/sweetalert2.scss";
+@import "~@ttskch/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css";
+
+.active-menu{
+    background-color: #f2f4f6 !important;
+}
+
+.profile-image{
+    width: 110px !important;
+    height: 110px !important;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    float: left;
+    margin: -35px -5px 0 30px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid white;
+}
+
+.profile-thumb{
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+mark{
+    background: orange;
+    color: black;
+}
+
+.custom-form{
+    .form-control[readonly] {
+        background: white !important;
+    }
+}
+
+.form-control[readonly] {
+    background-color: white;
+    opacity: 1;
+}
+
+
+// =========== Datatable ==========
+.table td, .table th {
+    padding: 12px 10px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+    div.dataTables_wrapper div.dataTables_length,
+    div.dataTables_wrapper div.dataTables_filter,
+    div.dataTables_wrapper div.dataTables_info,
+    div.dataTables_wrapper div.dataTables_paginate {
+        text-align: left;
+    }
+
+    div.dataTables_filter {
+        margin: 15px 0px;
+    }
+
+    div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+        justify-content: start !important;
+        margin-top: 25px;
+    }
+
+ }
+
+ // =========== Select 2 ==========
+ .select2-container .select2-selection--single{
+    background-color: white;
+    border-color: #ced4da;
+ }
+
+ .select2-container {
+    width: 100% !important;
+}

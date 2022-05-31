@@ -1,0 +1,8 @@
+  $table->string('name');
+            $table->text('description');
+            $table->foreignId('course_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->bigInteger('shift_id');
+            $table->foreignId('user_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete();
+            $table->date('start_date');
+            $table->date('end_date');
+            $table->enum('status', ['open', 'close'])->nullable()->default('open');
